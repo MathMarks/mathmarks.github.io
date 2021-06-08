@@ -1,9 +1,80 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap");
+
+html,
+body,
+.container {
+  margin: 0;
   height: 100%;
 }
 
-.main {
+.container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* NavBar styling*/
+/*
+  Primeira coisa a fazer
+  deixar os links sem estilo
+*/
+
+.navbar a {
+  text-decoration: none;
+}
+
+/*
+Agora Retirar os estilos dos li
+*/
+
+.navbar li {
+  list-style: none;
+}
+
+/*
+Retirar os estilos dos ul
+*/
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Navbar em grid para poder usar o atributo auto para a imagem
+*/
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.navbar img {
+  width: 100px;
+}
+
+.menu_1,
+.menu_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1f101a;
+}
+
+.menu_1 ul,
+.menu_2 ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul li a {
+  color: #848889;
+  font-family: "Baloo Tammudu 2", cursive;
+  transition-duration: 1s;
+  border-bottom: 2px solid #1f101a;
+}
+
+ul li a:hover {
+  color: #ae8f63;
+  border-bottom: 2px solid #8b233f;
 }
