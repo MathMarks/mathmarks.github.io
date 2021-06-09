@@ -79,7 +79,7 @@ ul li a {
   color: #848889;
   font-family: "Baloo Tammudu 2", cursive;
   transition-duration: 1s;
-  border-bottom: 2px solid #1f101a;
+  border-bottom: 2px solid transparent;
 }
 
 ul li a:hover {

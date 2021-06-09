@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap");
+
 .main {
   display: grid;
   height: 100%;
@@ -6,29 +8,99 @@
     "a1 a1 a2"
     "a3 a4 a4"
     "a5 a5 a6";
+  row-gap: 15px;
+  column-gap: 15px;
+  /*
+  background: linear-gradient(270deg, #ae8f63, #dfe0e2);
+  animation: animBG 59s ease infinite;*/
+
+  background-image: url("../images/indexBG2.jpg");
+  background-size: 110% 110%;
+
+  -moz-animation: animBG 59s ease infinite;
+  animation: animBG 59s ease infinite;
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
+@-webkit-keyframes animBG {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@-moz-keyframes animBG {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@keyframes animBG {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.option {
+  min-height: 300px;
+  border: 2px solid black;
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: transparent;
+  color: transparent;
+
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.long_opt {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .option:nth-of-type(1) {
   grid-area: a1;
-  background-color: #8b233f;
 }
+
+.option:nth-of-type(1):hover {
+  grid-area: a1;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: whitesmoke;
+}
+
 .option:nth-of-type(2) {
   grid-area: a2;
-  background-color: #ae8f63;
 }
 .option:nth-of-type(3) {
   grid-area: a3;
-  background-color: #dfe0e2;
 }
 .option:nth-of-type(4) {
   grid-area: a4;
-  background-color: #848889;
 }
+
+.option:nth-of-type(4):hover {
+  grid-area: a4;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: whitesmoke;
+}
+
 .option:nth-of-type(5) {
   grid-area: a5;
-  background-color: #1f101a;
 }
 .option:nth-of-type(6) {
   grid-area: a6;
-  background-color: #dfe0e2;
 }
