@@ -14,7 +14,7 @@
   background: linear-gradient(270deg, #ae8f63, #dfe0e2);
   animation: animBG 59s ease infinite;*/
 
-  background-image: url("../images/indexBG2.jpg");
+  background-image: url("../images/index_bg_medium.jpg");
   background-size: 110% 110%;
 
   -moz-animation: animBG 59s ease infinite;
@@ -70,6 +70,25 @@
 .long_opt {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  height: 100%;
+}
+
+.long_opt_cla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.long_opt_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.long_opt_desc p {
+  text-align: center;
 }
 
 .option:nth-of-type(1) {
@@ -78,7 +97,7 @@
 
 .option:nth-of-type(1):hover {
   grid-area: a1;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   color: whitesmoke;
 }
 
@@ -94,7 +113,7 @@
 
 .option:nth-of-type(4):hover {
   grid-area: a4;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   color: whitesmoke;
 }
 
