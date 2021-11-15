@@ -11,19 +11,9 @@
             "img_url":""
         },
         {
-            "titulo":"Titulo 3",
-            "desc":"Descrição 3",
-            "img_url":""
-        },
-        {
-            "titulo":"Titulo 4",
-            "desc":"Descrição 4",
-            "img_url":""
-        },
-        {
-            "titulo":"Titulo 5",
-            "desc":"Descrição 5",
+            "titulo":"Titulo 2",
+            "desc":"Descrição 2",
             "img_url":""
         }
-    ]
+    ] 
 }

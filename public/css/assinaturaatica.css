@@ -1,0 +1,109 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  font-family: "Varela Round", sans-serif;
+}
+
+.divLogo {
+  border-right: 2px solid black;
+}
+
+.logo {
+  height: 120px;
+  width: 120px;
+  margin-right: 5px;
+}
+
+.persInfo {
+  display: grid;
+  margin-left: 8px;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nomeArea {
+  vertical-align: bottom;
+}
+
+.telefone {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  vertical-align: top;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.nome {
+  font-family: "Bree Serif", serif;
+  font-size: 18px;
+  color: #a43143;
+  border-right: 2px solid black;
+  padding-right: 3px;
+}
+
+.area {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.posicao {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.locRedes {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  font-size: 13px;
+  font-weight: 600;
+  justify-items: center;
+}
+
+.redes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  align-content: center;
+}
+
+.redes img {
+  height: 20px;
+  width: 20px;
+}
+
+.locImg {
+  height: 20px;
+  width: 20px;
+}
+
+.locRedes span {
+  margin-right: 5px;
+}
+
+.redesConteudo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.redesConteudo img {
+  height: 22px;
+  width: 22px;
+}
+
+.telefone img {
+  height: 22px;
+  width: 22px;
+}
+
+.telefone a {
+  padding-top: 5px;
+}
