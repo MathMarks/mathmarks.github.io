@@ -29,16 +29,16 @@ main {
 
 #resultado {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
 }
 
 #resultadoValores {
   display: grid;
-  grid-template-columns: 1fr;
-  justify-items: end;
-  align-items: center;
+  grid-template-columns: 1fr 2fr;
+  justify-items: start;
   margin-right: 5px;
   font-size: 80%;
+  align-items: center;
 }
 
 #resultadoDescr {
@@ -95,4 +95,24 @@ main {
 
 #moedaReal {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #input > form > input {
+    margin-bottom: 20px;
+  }
+
+  #resultado {
+    margin-top: 35px;
+    font-size: 20px;
+  }
+
+  #resultadoDescr {
+    font-size: 17px;
+  }
 }
