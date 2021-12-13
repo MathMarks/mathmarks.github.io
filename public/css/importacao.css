@@ -82,7 +82,7 @@ main {
   height: 50px;
   text-align: center;
   border: none;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0);
   color: black;
   font-family: "Cantata One", serif;
   font-size: 20px;
@@ -93,6 +93,11 @@ main {
 
 .moedasDiv {
   text-align: center;
+}
+
+.moedasDiv > p {
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 #moedaReal {
