@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/wppmsg.css">
+    <link rel="stylesheet" href="./public/css/navbar.css">
+    <script src="./public/scripts/wppmsg.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="containerWpp">
+        <nav class="navbar">
+
+            <div class="menu_1">
+                <ul>
+                    <li class="i_menu"><a href="/projetos.html">Projetos</a></li>
+                    <li class="i_menu"><a href="">Códigos</a></li>
+                    <li class="i_menu"><a href="">Estudos</a></li>
+                </ul>
+             </div>
+             
+             <div id="logo_img"><img  src="../public/images/Logo.png" alt=""></div>
+ 
+             <div class="menu_2">
+                 <ul>
+                     <li class="i_menu"><a href="">About Me</a></li>
+                     <li class="i_menu"><a href="">Lazer</a></li>
+                     <li class="i_menu"><a href="">Ideias</a></li>
+                 </ul>
+             </div>
+ 
+         </nav>
+         <div class="wppTitle">
+             
+                 <h1>
+                    Gerador de link para WhatsApp com texto
+                 </h1>
+             
+         </div>
+         <section class="wppMain">
+
+            <div class="getData">
+                <label for="numeroTel">Celular</label>
+                <input id="numeroTel" name="numeroTel" type="number" placeholder="62998765432">
+                <label for="mensagem">Digite a mensagem</label>
+                <textarea id="msgText" name="mensagem" type="text" placeholder="Olá, seja bem vinda(o). Gostaria de falar sobre o produto."></textarea>
+            </div>
+            <div class="submitButton">
+                <button class="btnConverter" onclick="realizaConvercao()">Converter!</button>
+            </div>
+            <div class="resultText">
+                <div class="resultado">Exemplo de resultado: wa.me/5562998765432</div>
+                <button class="btnCopiar" onclick="copyToClipboard();">Copiar</button>
+                <button class="btnTestar" onclick="abrePagina();"> Testar </button>
+            </div>
+
+         </section>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap");
+.containerWpp{
+
+display: grid;
+
+grid-template-rows: auto auto 1fr;
+
+font-family: "Baloo Tammudu 2", cursive;
+}
+
+.wppTitle{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.wppMain{
+
+display: grid;
+
+grid-template-columns: 1fr auto 1fr;
+
+font-size: 25px;
+
+font-weight: 800;
+}
+
+.getData{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+.submitButton{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.resultText{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-items: center;
+
+}
+
+#numeroTel{
+
+    height:  30px;
+    text-align: center;
+    background-color: whitesmoke;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+
+}
+
+#msgText{
+
+    height:  100px;
+    text-align: center;
+    background-color: whitesmoke;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+}
+
+.submitButton{
+
+    text-align: center;
+
+}
+
+.btnConverter{
+
+    height: 50px;
+    width: 150px;
+    background-color: #048A81;
+    border: none;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btnConverter:hover {
+
+    cursor: pointer;
+
+    height: 60px;
+    width: 165px;
+    font-size: 18px;
+
+}
+
+
+
+.btnCopiar{
+
+    height: 30px;
+    width: 80px;
+    background-color: #048A81;
+    border: none;
+    color: white;
+
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: 0.5s;
+
+    margin-top: 20px;
+
+}
+
+.btnCopiar:hover{
+
+    cursor: pointer;
+    height: 40px;
+    width: 95px;
+    font-size: 12px;
+}
+
+.resultado{
+
+    font-size: 15px;
+
+}
+
+.btnTestar{
+
+    height: 30px;
+    width: 80px;
+    background-color: #048A81;
+    border: none;
+    color: white;
+
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: 0.5s;
+
+    margin-top: 20px;
+
+}
+
+.btnTestar:hover{
+
+    cursor: pointer;
+    height: 40px;
+    width: 95px;
+    font-size: 12px;
+}
+
+
+

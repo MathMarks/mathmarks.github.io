@@ -1,19 +1,24 @@
 {
     "projetos":[
         {
-            "titulo":"Titulo 1",
-            "desc":"Descrição 1",
-            "img_url":""
+            "titulo":"Calculadora Importação",
+
+            "desc":"Uma calculadora para ajudar a simular preços de custo geral para qualquer importação. O valor do dólar é atualizado automaticamente com o auxilio de uma API, e todas as informações de relevância em questão de preços são fornecidas no final. ",
+            
+            "img_url":"https://www.kiwi.com/stories/wp-content/uploads/2021/07/top-ten-beaches-veligandu-some.jpg",
+            "project_link":""
         },
         {
             "titulo":"Titulo 2",
-            "desc":"Descrição 2",
-            "img_url":""
+            "desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "img_url":"https://www.planetware.com/wpimages/2022/01/brazil-top-rated-beaches-praia-leao.jpg",
+            "project_link":""
         },
         {
             "titulo":"Titulo 2",
-            "desc":"Descrição 2",
-            "img_url":""
+            "desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "img_url":"https://atlantis.nyc3.digitaloceanspaces.com/media/legacy/atlantis/Things_To_Do/Water_Park/Beaches/Hero/Experiences_Beach.jpg",
+            "project_link":""
         }
     ] 
 }
