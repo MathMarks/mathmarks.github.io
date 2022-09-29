@@ -39,19 +39,26 @@ fetch(endpoint1)
             const img = document.createElement('img');
             const btnwpp = document.createElement('a');
             const btnweb = document.createElement('a');
+            const btndiv = document.createElement('div');
             
             parent.setAttribute('class','tile is-parent is-3');
             child.setAttribute('class','tile is-child box');
+            child.style.display = "flex";
+            child.style.flexDirection = "column";
+            child.style.justifyContent = "space-between";
             titulo.setAttribute('class', 'title');
+            titulo.style.marginTop = "auto";
             preco.setAttribute('class', 'subtitle');
             img.setAttribute('src', `${imageUsableURL(rows[count].c[4].v)}`);
 
-            btnwpp.setAttribute('class', 'button is-primary is-outlined');
+            btnwpp.setAttribute('class', 'button is-primary is-outlined is-fullwidth');
             btnwpp.innerText = "WhatsApp";
             btnwpp.setAttribute('href',`${String(rows[count].c[5].v)}`);
             btnwpp.setAttribute('target','_blank');
+            btnwpp.style.marginRight = "15px"
+            btnwpp.style.marginBottom = "5px"
 
-            btnweb.setAttribute('class', 'button is-link is-outlined');
+            btnweb.setAttribute('class', 'button is-link is-outlined is-fullwidth');
             btnweb.innerText = "Comparar Preços";
             btnweb.setAttribute('href',`${String(rows[count].c[6].v)}`);
             btnweb.setAttribute('target','_blank');
@@ -63,10 +70,11 @@ fetch(endpoint1)
             ancestor.appendChild(parent);
             parent.appendChild(child);
             child.appendChild(img);
-            child.append(titulo);
-            child.append(preco);
-            child.append(btnwpp);
-            child.append(btnweb);
+            child.appendChild(titulo);
+            child.appendChild(preco);
+            child.appendChild(btndiv);
+            btndiv.appendChild(btnwpp);
+            btndiv.appendChild(btnweb);
 
             count++;
 
