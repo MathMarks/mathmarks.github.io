@@ -17,46 +17,82 @@ fetch(endpoint1)
     const json = JSON.parse(temp);
     //console.log(json);
     const rows = json.table.rows;
-    //console.log(rows);
-    const content = document.getElementsByClassName('content')[0];
-    rows.forEach(row => {
+    console.log(rows);
+    const content = document.getElementsByClassName('my_items')[0];
+    console.log(rows['length']);
+    console.log(rows[0].c[0].v);
+    var count = 0;
 
-        
-        const div = document.createElement('div');
-        const titulo = document.createElement('div');
-        const data = document.createElement('div');
-        const descr = document.createElement('div');
-        const imageDiv = document.createElement('div');
-        const imgEle = document.createElement('img');
+    for(let i = rows['length'] ; i > 0 ; i){
 
-        div.setAttribute('class', 'content_row');
-        titulo.setAttribute('class', 'title');
-        data.setAttribute('class', 'data');
-        descr.setAttribute('class', 'descr');
-        imageDiv.setAttribute('class', 'image');
+        const ancestor = document.createElement('div');
+        ancestor.setAttribute('class','tile is-ancestor');
+        content.appendChild(ancestor);
 
-        content.appendChild(div);
+        for(let j = 0 ; (j < 4) && (i > 0) ; j++){
+            i--;
+            
+            const parent = document.createElement('div');
+            const child = document.createElement('article');
+            const titulo = document.createElement('p');
+            const preco = document.createElement('p');
+            const img = document.createElement('img');
+            const btnwpp = document.createElement('a');
+            const btnweb = document.createElement('a');
+            
+            parent.setAttribute('class','tile is-parent is-3');
+            child.setAttribute('class','tile is-child box');
+            titulo.setAttribute('class', 'title');
+            preco.setAttribute('class', 'subtitle');
+            img.setAttribute('src', `${imageUsableURL(rows[count].c[4].v)}`);
 
-        div.appendChild(titulo);
-        div.appendChild(data);
-        div.appendChild(descr);
-        div.appendChild(imageDiv);
-        imageDiv.appendChild(imgEle);
+            btnwpp.setAttribute('class', 'button is-primary is-outlined');
+            btnwpp.innerText = "WhatsApp";
+            btnwpp.setAttribute('href',`${String(rows[count].c[5].v)}`);
+            btnwpp.setAttribute('target','_blank');
 
-        titulo.innerText = row.c[0].v;
-        data.innerText = row.c[1].f;
-        descr.innerText = row.c[2].v;
-        imgEle.setAttribute('src', String(row.c[3].v));
+            btnweb.setAttribute('class', 'button is-link is-outlined');
+            btnweb.innerText = "Comparar Preços";
+            btnweb.setAttribute('href',`${String(rows[count].c[6].v)}`);
+            btnweb.setAttribute('target','_blank');
 
-
-        console.log(row.c[0].v);//title
-        console.log(row.c[1].f);//data
-        console.log(row.c[2].v);//title
-        console.log(row.c[3].v);//title
+            titulo.innerText = `${String(rows[count].c[0].v)}`
+            preco.innerText = `${String(rows[count].c[3].f)}`
 
 
+            ancestor.appendChild(parent);
+            parent.appendChild(child);
+            child.appendChild(img);
+            child.append(titulo);
+            child.append(preco);
+            child.append(btnwpp);
+            child.append(btnweb);
 
-    });
-    
+            count++;
+
+        }
+
+    }
 
 });
+
+
+function imageUsableURL(url){
+
+    if(String(url).includes("drive.google")){
+
+        console.log("Imagem do Drive");
+        const imgID = String(url).split("d/")[1].split("/")[0]; //Get the image ID
+        const usableURL = `https://drive.google.com/uc?export=view&id=${imgID}`;
+
+        return usableURL;
+
+    } else {
+
+        const usableURL = String(url);
+
+        return usableURL;
+
+    }
+
+}
