@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/importacao.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+    {% include './views/headneeds.liquid' %}
+    <script src="./public/scripts/importacao.js"></script>
+
+
+    <title>Calculadora Importação</title>
+  </head>
+  <body>
+
+    {% include './views/navbar.liquid' %}
+
+
+    <main>
+      <div class="logo">
+        <a href="https://mathmarks.github.io/"><img class="logoImg" src="./public/images/Logo.png" alt=""></a>
+      </div>
+      <section class="mainContent">
+        <div class="content" id="input">
+          <form action="">
+            <label for="preco">Preço do Produto</label>
+            <input type="text" class="calcValues" name="preco" id="" placeholder="Em dólares, $ 699,00" onfocus="this.value = ''">
+            <label for="frete">Quanto fica o frete?</label>
+            <input type="text" class="calcValues" name="frete" placeholder="Em dólares, $ 28,00" onfocus="this.value = ''">
+            <label for="declaracao">Qual preço será declarado?</label>
+            <input type="text" class="calcValues" name="declaracao" placeholder="Em dólares, $ 80,00" onfocus="this.value = ''">
+          </form>
+        </div>
+        <div class="content">
+          <div class="dolarHoje">
+            Dólar
+            <br>
+            Hoje
+          </div>
+          <div class="moedasDiv">
+
+            <label for="dolar"></label>
+            <input type="text" name="dolar" onfocus="this.value = '' " id="moedaDolar" placeholder="$ 1,00">
+            <label for="real"></label>
+            <p>Equivale a</p>
+            <input type="text" name="real" onfocus="this.value = '' " id="moedaReal" placeholder="R$ 5.61">
+            <label for="dolarTurismo">Dólar Turismo</label>
+            <input type="text" name="dolarTurismo" onfocus="this.value = '' " id="dolarTurismo" placeholder="R$ 5.81">
+
+          </div>
+
+        </div>
+        <div class="content" id="resultado">
+
+          <div id="resultadoValores">
+            <div id="iof">R$ 500.00</div>
+            <div>IOF</div>
+            <div id="taxaDecl">R$ 200,00</div>
+            <div>Para a Alfândega</div>
+            <div id="taxaTotal">R$ 800,00</div>
+            <div>Para a Alfândega caso 60%</div>
+            <div id="totalDolar">$ 807,00</div>
+            <div>Preço total em $</div>
+            <div id="totalReais">R$ 5500,00</div>
+            <div>Preço total em R$</div>
+            <div id="casoTaxaTotal">R$ 8800,00</div>
+            <div>Total Caso seja taxado em 60%</div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+  </body>
+</html>>>
