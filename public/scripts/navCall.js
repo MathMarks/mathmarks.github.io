@@ -1,4 +1,11 @@
 
+
+const body = document.getElementsByTagName('body')[0];
+const scriptBulma = document.createElement('script');
+
+scriptBulma.setAttribute('src','./public/scripts/bulmaScripts.js');
+body.appendChild(scriptBulma);
+
 load(document.getElementsByClassName('navCall')[0], './views/partials/navbar.html');
 loadAppend(document.getElementsByTagName('head')[0], './views/partials/headneeds.html');
 
