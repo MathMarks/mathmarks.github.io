@@ -46,25 +46,26 @@ fetch(endpoint1)
             child.style.display = "flex";
             child.style.flexDirection = "column";
             child.style.justifyContent = "space-between";
-            titulo.setAttribute('class', 'title');
+            titulo.setAttribute('class', 'title has-text-centered is-centered');
             titulo.style.marginTop = "auto";
-            preco.setAttribute('class', 'subtitle');
+            preco.setAttribute('class', 'subtitle mt-1 has-text-centered is-centered');
             img.setAttribute('src', `${imageUsableURL(rows[count].c[4].v)}`);
 
             btnwpp.setAttribute('class', 'button is-primary is-outlined is-fullwidth');
             btnwpp.innerText = "WhatsApp";
             btnwpp.setAttribute('href',`${String(rows[count].c[5].v)}`);
             btnwpp.setAttribute('target','_blank');
-            btnwpp.style.marginRight = "15px"
-            btnwpp.style.marginBottom = "5px"
+            btnwpp.style.marginRight = "15px";
+            btnwpp.style.marginBottom = "5px";
 
             btnweb.setAttribute('class', 'button is-link is-outlined is-fullwidth');
             btnweb.innerText = "Comparar Preços";
             btnweb.setAttribute('href',`${String(rows[count].c[6].v)}`);
             btnweb.setAttribute('target','_blank');
 
-            titulo.innerText = `${String(rows[count].c[0].v)}`
-            preco.innerText = `${String(rows[count].c[3].f)}`
+            titulo.innerText = `${String(rows[count].c[0].v)}`;
+            preco.innerText = `${String(rows[count].c[3].f)}`;
+
 
 
             ancestor.appendChild(parent);
@@ -75,6 +76,8 @@ fetch(endpoint1)
             child.appendChild(btndiv);
             btndiv.appendChild(btnwpp);
             btndiv.appendChild(btnweb);
+
+            createIconsInfo(String(rows[count].c[7].v), String(rows[count].c[2].v), child);
 
             count++;
 
@@ -102,5 +105,47 @@ function imageUsableURL(url){
         return usableURL;
 
     }
+
+}
+
+function createIconsInfo(cidade, condi, article){
+
+    const divExterna = document.createElement('div');
+    const spanWrapCid = document.createElement('span');
+    const spanIconCid = document.createElement('span');
+    const spanTextoCid = document.createElement('span');
+    const iconCid = document.createElement('i');
+
+    const spanWrapCond = document.createElement('span');
+    const spaniconCond = document.createElement('span');
+    const spanTextoCond = document.createElement('span');
+    const iconCond = document.createElement('i');
+
+    divExterna.appendChild(spanWrapCid);
+    spanWrapCid.appendChild(spanIconCid);
+    spanWrapCid.appendChild(spanTextoCid);
+    spanIconCid.appendChild(iconCid);
+
+    divExterna.setAttribute('class', 'level is-flex mt-5 is-justify-content-space-between');
+    spanWrapCid.setAttribute('class','icon-text');
+    spanIconCid.setAttribute('class', 'icon');
+    iconCid.setAttribute('class','fa-sharp fa-solid fa-location-dot');
+    spanTextoCid.innerText = String(cidade);
+
+    spaniconCond.appendChild(iconCond);
+    spanWrapCond.appendChild(spaniconCond);
+    spanWrapCond.appendChild(spanTextoCond);
+    
+
+    divExterna.appendChild(spanWrapCond);
+
+    spanWrapCond.setAttribute('class','icon-text');
+    spaniconCond.setAttribute('class', 'icon');
+    iconCond.setAttribute('class','fa-solid fa-star');
+    iconCond.style.color = "gold";
+    spanTextoCond.innerText = String(condi);
+
+
+    article.appendChild(divExterna);
 
 }
