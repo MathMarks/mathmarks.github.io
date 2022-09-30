@@ -12,35 +12,37 @@
 <body>
 
     <div class="navCall"></div>
-
-    <section class="containerWpp">
-         <div class="wppTitle">
-             
-                 <h1>
-                    Gerador de link para WhatsApp com texto
-                 </h1>
-             
-         </div>
-         <section class="wppMain">
-
-            <div class="getData">
-                <label for="numeroTel">Celular</label>
-                <input id="numeroTel" name="numeroTel" type="number" placeholder="62998765432">
-                <label for="mensagem">Digite a mensagem</label>
-                <textarea id="msgText" name="mensagem" type="text" placeholder="Olá, seja bem vinda(o). Gostaria de falar sobre o produto."></textarea>
+    
+    <h1 class="title has-text-centered">Gerador de link para <br> WhatsApp com texto</h1>
+    <div class="container is-fluid">
+        <div class="columns is-centered level">
+            <div class="column is-5 ">
+                <div class="field">
+                    <label for="celular" class="label">Número do Celular</label>
+                    <div class="control">
+                        <input type="text" id="numeroTel" class="input is-primary" placeholder="Ex: 62998765432">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="mensagem" class="label">Digite sua Mensagem</label>
+                    <div class="control">
+                        <textarea class="textarea is-primary" id="msgText" placeholder="Sua mensagem vai aqui..."></textarea>
+                    </div>
+                </div>
             </div>
-            <div class="submitButton">
-                <button class="btnConverter" onclick="realizaConvercao()">Converter!</button>
+            <div class="column is-2 has-text-centered">
+                <button class="button is-primary" onclick="realizaConvercao();">Criar Link</button>
             </div>
-            <div class="resultText">
-                <div class="resultado">Exemplo de resultado: wa.me/5562998765432</div>
-                <button class="btnCopiar" onclick="copyToClipboard();">Copiar</button>
-                <button class="btnTestar" onclick="abrePagina();"> Testar </button>
+            <div class="column is-5 has-text-centered">
+                <div id="resultado" class="mb-5">Exemplo de resultado: wa.me/5562998765432</div>
+                <button class="button is-primary" onclick="copyToClipboard();">Copiar</button>
+                <button class="button" onclick="abrePagina();">Testar Link </button>
             </div>
+        </div>
+    </div>
 
-         </section>
-    </section>
-
+    
+    
     <script src="./public/scripts/navCall.js"></script>
 </body>
 </html>

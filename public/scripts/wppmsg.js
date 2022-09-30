@@ -7,7 +7,7 @@ function realizaConvercao(){
 
     var numeroCel = document.getElementById("numeroTel");
     var mensagem = document.getElementById("msgText");
-    var resultado = document.getElementsByClassName("resultado")[0];
+    var resultado = document.getElementById("resultado");
 
     resultado.innerHTML = converter(numeroCel, mensagem);
     
@@ -16,7 +16,7 @@ function realizaConvercao(){
 
 function copyToClipboard(){
 
-    var item = document.getElementsByClassName("resultado")[0];
+    var item = document.getElementById("resultado");
 
     navigator.clipboard.writeText(item.innerHTML);
 
@@ -36,7 +36,7 @@ function converter(numero, texto){
 
 function abrePagina(){
 
-    var resultado = document.getElementsByClassName("resultado")[0];
+    var resultado = document.getElementById("resultado");
 
     resultadoTexto = resultado.innerHTML;
 
