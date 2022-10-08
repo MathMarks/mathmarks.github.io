@@ -54,7 +54,7 @@ fetch(endpoint1)
         <div class="card">
             <div class="card-image">
                 <figure class="image">
-                    <img src="${row.c[2].v}" alt="">
+                    <img src="${row.c[2].v}" alt="" style="max-height: 495px;>
                 </figure>
             </div>
             <div class="card-content">

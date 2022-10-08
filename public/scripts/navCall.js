@@ -1,6 +1,8 @@
 
 
-const body = document.getElementsByTagName('body')[0];
+document.addEventListener('DOMContentLoaded', () => {
+
+    const body = document.getElementsByTagName('body')[0];
 const scriptBulma = document.createElement('script');
 
 scriptBulma.setAttribute('src','./public/scripts/bulmaScripts.js');
@@ -28,3 +30,5 @@ function loadAppend(target, url) {
     };
     r.send();
 }
+    
+  });
