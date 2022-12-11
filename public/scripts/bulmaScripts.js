@@ -1,6 +1,6 @@
 
     //Adiciona os eventos ao Burguer menu
-window.addEventListener('load', () => {
+document.addEventListener('load', () => {
 
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);

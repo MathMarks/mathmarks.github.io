@@ -14,12 +14,50 @@
   background: linear-gradient(270deg, #ae8f63, #dfe0e2);
   animation: animBG 59s ease infinite;*/
 
+  /* background-image: url("../images/index_bg_medium.jpg");
+  background-size: 110% 110%;
+
+  -moz-animation: animBG 59s ease infinite;
+  animation: animBG 59s ease infinite; */
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
+.bodyIndex{
+
   background-image: url("../images/index_bg_medium.jpg");
   background-size: 110% 110%;
 
   -moz-animation: animBG 59s ease infinite;
   animation: animBG 59s ease infinite;
-  font-family: "Baloo Tammudu 2", cursive;
+
+}
+
+.bodyIndex .navbar{
+
+  background-color: transparent;
+
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "a1"
+    "a2"
+    "a3"
+    "a4"
+    "a5"
+    "a6";
+  }
+
+  
+
 }
 
 @-webkit-keyframes animBG {
@@ -46,80 +84,40 @@
 }
 @keyframes animBG {
   0% {
-    background-position: 50% 0%;
+    background-position: 50% 20%;
+  }
+  25% {
+    background-position: 80% 80%;
   }
   50% {
-    background-position: 50% 100%;
+    background-position: 100% 40%;
+  }
+  75% {
+    background-position: 40% 70%;
   }
   100% {
-    background-position: 50% 0%;
+    background-position: 50% 20%;
   }
 }
 
-.option {
-  min-height: 300px;
-  border: 2px solid black;
-  text-decoration: none;
-  color: whitesmoke;
+
+.navIndex .navbar-dropdown{
+
   background-color: transparent;
-  color: transparent;
+  color: white;
 
-  transition: background-color 1s ease, color 1s ease;
-}
-
-.long_opt {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  height: 100%;
 }
 
-.long_opt_cla {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.is-hoverable:hover{
+
+  background-color: transparent;
+  color: white;
+
 }
 
-.long_opt_desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+.navbar-link:hover{
 
-.long_opt_desc p {
-  text-align: center;
-}
+  background-color: transparent;
+  color: white;
 
-.option:nth-of-type(1) {
-  grid-area: a1;
-}
-
-.option:nth-of-type(1):hover {
-  grid-area: a1;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: whitesmoke;
-}
-
-.option:nth-of-type(2) {
-  grid-area: a2;
-}
-.option:nth-of-type(3) {
-  grid-area: a3;
-}
-.option:nth-of-type(4) {
-  grid-area: a4;
-}
-
-.option:nth-of-type(4):hover {
-  grid-area: a4;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: whitesmoke;
-}
-
-.option:nth-of-type(5) {
-  grid-area: a5;
-}
-.option:nth-of-type(6) {
-  grid-area: a6;
 }
