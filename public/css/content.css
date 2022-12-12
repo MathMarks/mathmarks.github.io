@@ -109,12 +109,13 @@
 }
 
 @media only screen and (max-width: 600px){
-  .navIndex .navbar-dropdown{
+  .navIndex, .navbar-dropdown, .navbar-burger, .navbar-menu{
 
     background-color: transparent;
     color: white;
   
   }
+
 
 }
 
