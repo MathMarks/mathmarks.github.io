@@ -108,6 +108,16 @@
 
 }
 
+@media only screen and (max-width: 600px){
+  .navIndex .navbar-dropdown{
+
+    background-color: transparent;
+    color: white;
+  
+  }
+
+}
+
 .is-hoverable:hover{
 
   background-color: transparent;
