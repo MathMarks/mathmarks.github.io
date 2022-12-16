@@ -6,11 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marks Importados</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./public/css/bulma/bulma-0.9.4 (1)/bulma/sass/bulma-radio-checkbox.css">
 </head>
 <body>
   
-    <div class="navCall"></div>
-        
+    <div class="navCall box"></div>
+
+   <div class="filtros">
+    <div class="cidades is-flex is-flex-direction-column box is-align-items-center block">
+        <div class="titulo-cidades">
+            Selecione a Cidade de Interesse
+        </div>
+        <div class="field">
+            <p class="control block">
+                <div class="b-checkbox is-inline  is-info">
+                    <input id="Goiania" class="styled" checked type="checkbox">
+                    <label for="Goiania">
+                        Goiânia
+                    </label>
+                </div>
+                <div class="b-checkbox is-inline is-info ">
+                    <input id="Bage" class="styled" checked type="checkbox">
+                    <label for="Bage">
+                        Bagé
+                    </label>
+                </div>
+            </p>
+        </div>
+    </div>
+   </div>
+
     <div class="section">
         <div class="container is-fluid">
             <div class="my_items">
