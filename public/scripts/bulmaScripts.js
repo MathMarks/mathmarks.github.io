@@ -1,14 +1,14 @@
-
+console.log("dsfasd")
     //Adiciona os eventos ao Burguer menu
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
 
-    
+    console.log("Entrou 1");
     // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-    console.log($navbarBurgers)
+    const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    console.log(navbarBurgers);
     
     // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
+    navbarBurgers.forEach( el => {
         console.log(el + "1");
         el.addEventListener('click', () => {
     
@@ -23,5 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         });
     });
+
+    
 });
 
