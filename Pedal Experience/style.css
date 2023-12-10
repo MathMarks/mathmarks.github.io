@@ -1,0 +1,393 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+h2{
+
+    color: #262061; /* One of your brand colors */
+    margin-bottom: 0;
+    text-align:center;/* Space between the title and text */
+}
+
+body {
+    background-color: #fff;
+}
+
+/* Navbar styles */
+/* Navbar styles */
+.navbar {
+    background-color: #fff;
+    color: #ffffff;
+    padding: 5px 0; /* Added margin to top and bottom */
+    font-size: 12px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-logo img {
+    height: 50px; /* You can adjust it as per your logo's aspect ratio */
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-btn {
+    background-color: #1d32dc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 4rem;
+}
+
+.navbar-btn:hover {
+    background-color: #25b215;
+}
+
+.navbar-btn-contrast {
+    background-color: #33ff88;
+    color: #000000;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+
+.energy-section {
+    display: flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+    padding: 40px 20px; /* Adjust to your spacing preferences */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ... (other styles) ... */
+
+.image-container {
+    flex: 1;
+    background: url('./public/image/img_1.jpg') no-repeat center center;
+    background-size: cover;
+    /* clip-path: polygon(50% 0%, 61% 4%, 67% 12%, 78% 22%, 85% 35%, 90% 58%, 94% 67%, 100% 70%, 100% 100%, 0% 100%, 0 65%, 7% 51%, 14% 42%, 24% 31%, 39% 18%); */
+    transition: all 1s ease-out;
+    min-height: 15rem;
+    border-radius: 5px;
+}
+
+/* ... */
+
+/* Hover effect to animate the clip-path slightly for the image container */
+/* .image-container:hover {
+    clip-path: polygon(50% 0%, 60% 5%, 65% 15%, 75% 25%, 82% 40%, 87% 60%, 92% 70%, 100% 75%, 100% 100%, 0% 100%, 0 70%, 10% 55%, 20% 45%, 30% 35%, 45% 20%);
+} */
+.content-container {
+    flex: 1;
+    padding: 0 20px; /* Space around content */
+    display: flex;
+    flex-direction: column; /* Stack the title and text vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container h1 {
+    color: #262061; /* One of your brand colors */
+    margin-bottom: 20px;
+    text-align:center;/* Space between the title and text */
+}
+
+.content-container p {
+    color: #126089; /* Another one of your brand colors */
+    line-height: 1.6; /* Improves readability */
+    text-align: center;
+}
+
+.christmas-section {
+    display: flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+    padding: 40px 20px; /* Adjust to your spacing preferences */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-container {
+    flex: 2; /* Takes 2/3 of the horizontal space */
+    padding-right: 20px; /* Adjust the padding as needed */
+}
+
+.text-container h1 {
+    margin-bottom: 15px;
+    color: #262061; /* Brand color for the title */
+    /* Rest of your title styles */
+}
+
+.text-container p {
+    color: #126089; /* Brand color for the text */
+    /* Rest of your text styles */
+}
+
+.image-sec-container {
+    flex: 1; /* Takes the remaining 1/3 of the horizontal space */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the image in the div */
+}
+
+.image-sec-container img {
+    max-width: 100%; /* Making sure the image is responsive */
+    border-radius: 5px; /* Rounded corners as requested */
+    object-fit: cover; /* This will cover the area, use 'contain' if you want to see the whole image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide contents vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px; /* Adjust to your spacing preferences */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .swiper-slide img {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 5px; /* Rounded corners as requested */
+  }
+  
+  .card-info {
+    margin-top: 10px; /* Space above the name */
+    font-weight: bold;
+    /* Customize further as needed */
+  }
+
+  .site-footer {
+    background-color: #262061;
+    color: white;
+    padding: 40px 0;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin: 20px;
+}
+
+.footer-section h3 {
+    color: #33ff88; /* Use one of your brand colors for the section headers */
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section ul li a {
+    color: #25b215; /* Brand color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #33ff88; /* Hover effect */
+}
+
+.footer-section .social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    font-size: 1.5em; /* Adjust size as needed */
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5em;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    cursor: pointer;
+    padding: 0.6em 1.2em;
+    background-color: #25b215; /* Brand color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #33ff88; /* Hover effect */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #33ff88; /* Brand color for the border */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+    
+    .navbar-logo {
+        margin-bottom: 15px;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+    }
+    
+    .navbar-btn {
+        margin-top: 10px;
+        width: 100%; /* Full width buttons on mobile */
+    }
+
+    .burger-menu {
+        display: block;
+    }
+    
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%; /* Full width on mobile */
+    }
+    
+    /* When menu is active show the navigation */
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    /* Styling for when burger menu is transformed into a close icon */
+    .burger-menu.change .burger-bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger-menu.change .burger-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.change .burger-bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    /* restyle buttons for the mobile view */
+    .navbar-btn {
+        margin: 5px 0; /* Add more margin for mobile buttons */
+        width: calc(100% - 20px); /* Adjusting width to allow for padding */
+    }
+
+    .energy-section {
+        flex-direction: column; /* Stack image and text on smaller screens */
+    }
+
+    .image-container,
+    .content-container {
+        width: 100%;
+        margin-bottom: 20px; /* Space between stacked items */
+    }
+    .christmas-section {
+        flex-direction: column; /* Stack children vertically */
+    }
+
+    .image-sec-container,
+    .text-container {
+        flex: none; /* Remove the flex ratio since we're stacking vertically */
+        width: 100%; /* Full width for both children */
+        text-align: center;
+    }
+
+    /* Change order so the image comes before the text */
+    .image-sec-container {
+        order: -1; /* Bring image container before text container in the visual flow */
+    }
+    
+    .text-container {
+        padding-right: 0; /* Remove right padding on smaller screens */
+    }
+
+    .image-sec-container img {
+        width: auto; /* Change width to auto for smaller screens to maintain aspect ratio */
+        max-height: 300px; /* Optional: you can set a max-height to constrain image size */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 10px;
+    }
+    
+    .navbar-btn {
+        padding: 8px 10px;
+    }
+}
